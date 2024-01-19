@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<h:html xmlns:f="http://xmlns.jcp.org/jsf/core"
+        xmlns:h="http://xmlns.jcp.org/jsf/html"
+        xmlns:p="http://primefaces.org/ui">
+
+    <h:head>
+        <title>Manejo de Cuentas</title>
+        <link rel="stylesheet" href="https://unpkg.com/primeflex@^3/primeflex.css"/>
+    </h:head>
+    <h:body>
+        <div class="card">
+            <div class="flex justify-content-center
+        flex-wrap card-container yellow-container">
+                <h3>Sistema de Cuentas Bancarias</h3>
+            </div>
+        </div>
+        <div class="card">
+                <p:dataTable value="#{indexController.accounts}" var="account">
+                    <div>Valores de la tabla: </div>
+                    <h:outputText value="#{account.salary}" />
+                </p:dataTable>
+        </div>
+        <div>
+            <p:spinner />
+        </div>
+    </h:body>
+
+</h:html>
